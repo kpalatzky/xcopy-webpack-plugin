@@ -13,7 +13,9 @@
   "bugs": "https://github.com/kpalatzky/xcopy-webpack-plugin/issues",
   "scripts": {
     "start": "yarn build -- --watch",
-    "build": "tsc"
+		"build": "tsc",
+		"test": "jest",
+		"test:watch": "yarn test -- --watch"
   },
   "engines": {
     "node": ">= 6.9.0"
@@ -26,9 +28,11 @@
     "webpack-log": "^3.0.1"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.22",
     "@types/webpack": "^4.39.8",
     "jest": "^24.9.0",
     "semantic-release": "^15.13.30",
+    "ts-jest": "^24.1.0",
     "tslint": "^5.20.1",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2"
