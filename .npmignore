@@ -1,0 +1,11 @@
+.gitignore
+.gitattributes
+.editorconfig
+.travis.yml
+tslint.json
+webpack.config.js
+yarn.lock
+.github/
+.vscode/
+src/
+doc/
