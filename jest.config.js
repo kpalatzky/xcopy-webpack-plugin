@@ -1,11 +1,18 @@
+// jest.config.js
+const { pathsToModuleNameMapper } = require('ts-jest/utils');
+// In the following statement, replace `./tsconfig` with the path to your `tsconfig` file
+// which contains the path mapping (ie the `compilerOptions.paths` option):
+const { compilerOptions } = require('./tsconfig');
+
 module.exports = {
-	"roots": [
-		"<rootDir>/src"
+	rootDir: '.',
+  preset: 'ts-jest',
+	testEnvironment: 'node',
+	collectCoverageFrom: [
+    '<rootDir>/src/**/*',
+		'!<rootDir>/test/**/*',
 	],
-	testMatch: [
-		"**/?(*.)+(spec|test).+(ts|tsx|js)"
-	],
-	"transform": {
-		"^.+\\.(ts|tsx)?$": "ts-jest"
-	},
-}
+	testMatch: ['<rootDir>/test/**/*.test.ts'],
+	moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths , { prefix: '<rootDir>/' } ),
+	cacheDirectory: '<rootDir>/.cache/jest',
+};

@@ -1,26 +1,21 @@
-import { Compiler, Plugin, compilation } from "webpack";
-import log, { Logger } from 'webpack-log';
+import { compilation, Compiler, Plugin } from "webpack";
+import log, { Logger } from "webpack-log";
+// import log, { Logger } from "webpack-log";
 
-export interface Pattern {
-}
 
-export interface Options {
-}
+export class CopyPlugin implements Plugin {
+	protected name: string;
 
-export class CopyPlugin extends Plugin {
-	protected name: string = "xcopy-webpack-plugin";
+	protected patterns: any[];
 
-	protected patterns: Pattern[];
-
-	protected options: Options;
+	protected options: any;
 
 	protected logger: Logger;
 
-	constructor(patterns: Pattern[], options: Options) {
-		super();
-
-		this.patterns = patterns;
-		this.options = options;
+	constructor(patterns: any[], options?: any) {
+		this.patterns = patterns || [];
+		this.options = options || {}
+		this.name = "xcopy-webpack-plugin";
 
 		// init logger
 		this.logger = log({
