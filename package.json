@@ -20,13 +20,13 @@
 		"test:coverage": "yarn test --coverage"
   },
   "engines": {
-    "node": ">= 6.9.0"
+    "node": ">= 8.0.0"
   },
   "peerDependencies": {
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "glob": "^7.1.6",
+    "globby": "^10.0.1",
     "webpack-log": "^3.0.1"
   },
   "devDependencies": {
