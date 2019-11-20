@@ -1,8 +1,8 @@
-name: Test
+name: build
 on: [push, pull_request]
 
 jobs:
-  test:
+  build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
