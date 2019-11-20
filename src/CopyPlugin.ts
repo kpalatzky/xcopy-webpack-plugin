@@ -2,7 +2,6 @@ import { compilation, Compiler, Plugin } from "webpack";
 import log, { Logger } from "webpack-log";
 // import log, { Logger } from "webpack-log";
 
-
 export class CopyPlugin implements Plugin {
 	protected name: string;
 

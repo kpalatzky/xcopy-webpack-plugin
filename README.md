@@ -3,6 +3,7 @@
     <img width="200" height="200"
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
+	<h1>eXtended copy-webpack-plugin</h1>
 
 [![npm][npm]][npm-url]
 [![codecov][codecov]][codecov-url]
@@ -13,8 +14,7 @@
 
 </div>
 
-
-# xcopy-webpack-plugin
+> ⚠️ This plugin is still under development and should only be used for testing purposes.
 
 ## Getting started
 

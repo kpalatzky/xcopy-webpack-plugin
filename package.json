@@ -4,20 +4,20 @@
   "author": "Kevin Palatzky",
   "description": "Copy and merge files and folders with Webpack",
   "license": "MIT",
-	"main": "lib/index.js",
-	"types": "lib/index.d.ts",
+  "main": "lib/bundle.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
-	],
+  ],
   "repository": "https://github.com/kpalatzky/xcopy-webpack-plugin.git",
   "homepage": "https://github.com/kpalatzky/xcopy-webpack-plugin",
   "bugs": "https://github.com/kpalatzky/xcopy-webpack-plugin/issues",
   "scripts": {
     "start": "yarn build --watch",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "webpack --colors --display-error-details",
     "test": "jest",
-		"test:watch": "yarn test --watch",
-		"test:coverage": "yarn test --coverage"
+    "test:watch": "yarn test --watch",
+    "test:coverage": "yarn test --coverage"
   },
   "engines": {
     "node": ">= 8.0.0"
@@ -34,9 +34,12 @@
     "@types/webpack": "^4.39.8",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
+    "ts-loader": "^6.2.1",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
     "tslint": "^5.20.1",
     "typescript": "^3.7.2",
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "keywords": [
     "webpack",

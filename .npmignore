@@ -1,11 +1,14 @@
 .gitignore
 .gitattributes
 .editorconfig
-.travis.yml
+tsconfig.build.json
+tsconfig.json
 tslint.json
 webpack.config.js
+jest.config.js
 yarn.lock
 .github/
 .vscode/
 src/
+test/
 doc/
