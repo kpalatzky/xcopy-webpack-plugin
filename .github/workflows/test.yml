@@ -10,7 +10,7 @@ jobs:
         node: [8.x, 10.x, 12.x]
     steps:
     - uses: actions/checkout@v1
-    - name: Testing on ${{ matrix.os }} with Node ${{ matrix.node }}
+    - name: Testing on ${{ matrix.os }} with node ${{ matrix.node }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node }}
