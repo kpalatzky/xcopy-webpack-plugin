@@ -12,7 +12,7 @@ module.exports = {
     '<rootDir>/src/**/*',
 		'!<rootDir>/test/**/*',
 	],
-	testMatch: ['<rootDir>/test/**/*.test.ts'],
+	testMatch: ['<rootDir>/test/**/*.spec.ts'],
 	moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths , { prefix: '<rootDir>/' } ),
 	cacheDirectory: '<rootDir>/.cache/jest',
 };
