@@ -81,7 +81,7 @@ TBD
 [npm-url]: https://npmjs.com/package/xcopy-webpack-plugin
 [node]: https://img.shields.io/node/v/xcopy-webpack-plugin.svg
 [node-url]: https://nodejs.org
-[deps]: https://david-dm.org/kpalatzky/xcopy-webpack-plugin.svg
+[deps]: https://img.shields.io/david/kpalatzky/xcopy-webpack-plugin
 [deps-url]: https://david-dm.org/kpalatzky/xcopy-webpack-plugin
 [size]: https://packagephobia.now.sh/badge?p=xcopy-webpack-plugin
 [size-url]: https://packagephobia.now.sh/result?p=xcopy-webpack-plugin
