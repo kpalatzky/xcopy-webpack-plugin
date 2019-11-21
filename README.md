@@ -9,6 +9,7 @@
 [![codecov][codecov]][codecov-url]
 [![build][build]][build-url]
 [![deps][deps]][deps-url]
+[![dependabot][dependabot]][dependabot-url]
 [![node][node]][node-url]
 [![size][size]][size-url]
 
@@ -88,4 +89,6 @@ TBD
 [codecov-url]: https://codecov.io/gh/kpalatzky/xcopy-webpack-plugin
 [build]: https://github.com/kpalatzky/xcopy-webpack-plugin/workflows/build/badge.svg
 [build-url]: https://github.com/kpalatzky/xcopy-webpack-plugin/actions?query=workflow%3Abuild
+[dependabot]: https://badgen.net/dependabot/kpalatzky/xcopy-webpack-plugin/?icon=dependabot
+[dependabot-url]: https://dependabot.com/
 [copy-webpack-plugin-url]: https://github.com/webpack-contrib/copy-webpack-plugin
