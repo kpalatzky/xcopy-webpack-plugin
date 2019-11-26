@@ -22,7 +22,7 @@ describe("Suite copy", () => {
 			},
 			(err, stats) => {
 				// check
-				expect(err).toBe(null);
+				expect(err).toBeUndefined();
 				expect(stats.hasErrors()).toBe(false);
 				console.log(stats);
 			}
