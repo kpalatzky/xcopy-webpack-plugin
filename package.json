@@ -32,9 +32,10 @@
 		"webpack-log": "^3.0.1"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^8.2.0",
+		"@commitlint/config-conventional": "^8.2.0",
 		"@types/jest": "^24.0.22",
 		"@types/webpack": "^4.39.8",
-		"commitlint": "^8.2.0",
 		"husky": "^3.1.0",
 		"jest": "^24.9.0",
 		"lint-staged": "^9.4.3",
