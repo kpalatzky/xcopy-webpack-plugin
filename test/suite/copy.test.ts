@@ -22,9 +22,8 @@ describe("Suite copy", () => {
 			},
 			(err, stats) => {
 				// check
-				expect(err).toBeUndefined();
+				expect(err).toBeNull();
 				expect(stats.hasErrors()).toBe(false);
-				console.log(stats);
 			}
 		);
 	});
