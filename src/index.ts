@@ -1,2 +1,2 @@
 // export class and interfaces
-export { CopyPlugin  } from "./CopyPlugin";
+export { CopyPlugin, Pattern, Options } from "./CopyPlugin";

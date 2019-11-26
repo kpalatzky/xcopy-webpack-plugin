@@ -36,15 +36,15 @@ Let's get started by adding the plugin to your `webpack` config:
 ### webpack.config.js
 
 ```ts
-const { CopyPlugin } = require('xcopy-webpack-plugin');
+const { CopyPlugin } = require("xcopy-webpack-plugin");
 
 module.exports = {
-  plugins: [
-    new CopyPlugin([
-      { from: 'source', to: 'dest' },
-      { from: 'other', to: 'public' },
-    ]),
-  ],
+	plugins: [
+		new CopyPlugin([
+			{ from: "source", to: "dest" },
+			{ from: "other", to: "public" }
+		])
+	]
 };
 ```
 
@@ -56,7 +56,7 @@ The plugin's signature:
 
 ```ts
 module.exports = {
-  plugins: [new CopyPlugin(patterns, options)],
+	plugins: [new CopyPlugin(patterns, options)]
 };
 ```
 
@@ -67,7 +67,6 @@ TBD
 ### Options
 
 TBD
-
 
 ## License
 

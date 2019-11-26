@@ -1,56 +1,62 @@
 {
-  "name": "xcopy-webpack-plugin",
-  "version": "0.0.1",
-  "author": "Kevin Palatzky",
-  "description": "Copy and merge files and folders with Webpack",
-  "license": "MIT",
-  "main": "lib/bundle.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
-  "repository": "https://github.com/kpalatzky/xcopy-webpack-plugin.git",
-  "homepage": "https://github.com/kpalatzky/xcopy-webpack-plugin",
-  "bugs": "https://github.com/kpalatzky/xcopy-webpack-plugin/issues",
-  "scripts": {
-    "start": "yarn build --watch",
-    "build": "webpack --colors --display-error-details",
-    "test": "jest",
-    "test:watch": "yarn test --watch",
-    "test:coverage": "yarn test --coverage"
-  },
-  "engines": {
-    "node": ">= 8.0.0"
-  },
-  "peerDependencies": {
-    "webpack": "^4.0.0"
-  },
-  "dependencies": {
-    "globby": "^10.0.1",
-    "webpack-log": "^3.0.1"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.0.22",
-    "@types/webpack": "^4.39.8",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.2.0",
-    "ts-loader": "^6.2.1",
-    "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "tslint": "^5.20.1",
-    "typescript": "^3.7.2",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
-  },
-  "keywords": [
-    "webpack",
-    "plugin",
-    "transfer",
-    "move",
-    "copy",
-    "xcopy",
-    "copy-webpack",
-    "copy-plugin",
-    "append",
-    "merge"
-  ]
+	"name": "xcopy-webpack-plugin",
+	"version": "0.0.1",
+	"author": "Kevin Palatzky",
+	"description": "Copy and merge files and folders with Webpack",
+	"license": "MIT",
+	"main": "lib/bundle.js",
+	"types": "lib/index.d.ts",
+	"files": [
+		"lib"
+	],
+	"repository": "https://github.com/kpalatzky/xcopy-webpack-plugin.git",
+	"homepage": "https://github.com/kpalatzky/xcopy-webpack-plugin",
+	"bugs": "https://github.com/kpalatzky/xcopy-webpack-plugin/issues",
+	"scripts": {
+		"start": "yarn build --watch",
+		"build": "webpack --colors --display-error-details",
+		"lint": "prettier \"{**/*,*}.{ts,js,json,md,yml,css}\" --check",
+		"lint:fix": "yarn lint --write",
+		"test": "jest",
+		"test:watch": "yarn test --watch --verbose",
+		"test:coverage": "yarn test --coverage"
+	},
+	"engines": {
+		"node": ">= 8.6.0"
+	},
+	"peerDependencies": {
+		"webpack": "^4.0.0"
+	},
+	"dependencies": {
+		"globby": "^10.0.1",
+		"webpack-log": "^3.0.1"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.0.22",
+		"@types/webpack": "^4.39.8",
+		"commitlint": "^8.2.0",
+		"husky": "^3.1.0",
+		"jest": "^24.9.0",
+		"lint-staged": "^9.4.3",
+		"prettier": "^1.19.1",
+		"ts-jest": "^24.2.0",
+		"ts-loader": "^6.2.1",
+		"tsconfig-paths-webpack-plugin": "^3.2.0",
+		"tslint": "^5.20.1",
+		"typescript": "^3.7.2",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	},
+	"keywords": [
+		"webpack",
+		"plugin",
+		"transfer",
+		"move",
+		"copy",
+		"xcopy",
+		"copy-webpack",
+		"copy-plugin",
+		"append",
+		"merge"
+	]
 }

@@ -8,15 +8,8 @@
 		"declaration": true,
 		"stripInternal": true,
 		"outDir": "lib",
-		"rootDir": "src",
+		"rootDir": "src"
 	},
-	"include": [
-		"src"
-	],
-	"exclude": [
-		"test",
-		"node_modules",
-		"**/*.spec.ts",
-		"**/*.test.ts"
-	]
+	"include": ["src"],
+	"exclude": ["test", "node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }

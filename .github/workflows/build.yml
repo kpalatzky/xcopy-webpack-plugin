@@ -9,28 +9,27 @@ jobs:
         os: [macos-latest, windows-latest, ubuntu-latest]
         node: [8.x, 10.x, 12.x]
     steps:
-    - uses: actions/checkout@v1
-    - name: Testing on ${{ matrix.os }} with node ${{ matrix.node }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node }}
-    - run: yarn install
-    - run: yarn test --ci
-      env:
-        CI: 'true'
+      - uses: actions/checkout@v1
+      - name: Testing on ${{ matrix.os }} with node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - run: yarn install
+      - run: yarn test --ci
+        env:
+          CI: "true"
   coverage:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Updating coverage
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - run: yarn install
-    - run: yarn test --ci --coverage
-      env:
-        CI: 'true'
-    - uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-
+      - uses: actions/checkout@v1
+      - name: Updating coverage
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: yarn install
+      - run: yarn test --ci --coverage
+        env:
+          CI: "true"
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

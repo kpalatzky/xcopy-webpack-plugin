@@ -6,16 +6,10 @@
 		"outDir": "./lib",
 		"baseUrl": ".",
 		"paths": {
-			"@/*": [
-				"./src/*"
-			]
+			"@/*": ["./src/*"]
 		},
-		"lib": [
-			"es2015"
-		],
-		"typeRoots": [
-			"./node_modules/@types"
-		],
+		"lib": ["es2015"],
+		"typeRoots": ["./node_modules/@types"],
 		"removeComments": true,
 		"strict": true,
 		"sourceMap": false,
@@ -28,11 +22,6 @@
 		"declaration": false,
 		"esModuleInterop": true
 	},
-	"include": [
-		"src",
-		"test"
-	],
-	"exclude": [
-		"node_modules"
-	]
+	"include": ["src", "test"],
+	"exclude": ["node_modules"]
 }

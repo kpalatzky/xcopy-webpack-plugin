@@ -1,0 +1,9 @@
+/coverage
+/lib
+/node_modules
+/.testdata
+/.cache
+/.git
+package-lock.json
+yarn.lock
+W
