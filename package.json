@@ -18,6 +18,7 @@
 		"lint": "prettier \"{**/*,*}.{ts,js,json,md,yml,css}\" --check",
 		"lint:fix": "yarn lint --write",
 		"test": "jest",
+		"husky": "husky",
 		"test:watch": "yarn test --watch --verbose",
 		"test:coverage": "yarn test --coverage"
 	},
