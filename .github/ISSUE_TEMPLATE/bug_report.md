@@ -4,7 +4,11 @@ about: Create a report to help us improve
 title: "[BUG] "
 labels: "bug"
 assignees: "kpalatzky"
----**Expected behavior:**
+---
+
+<br>
+
+**Expected behavior:**
 
 <!-- What is the expected behavior? -->
 
