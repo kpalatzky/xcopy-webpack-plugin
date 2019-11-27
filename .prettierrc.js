@@ -4,5 +4,13 @@ module.exports = {
 	useTabs: true,
 	tabWidth: 2,
 	quoteProps: "as-needed",
-	arrowParens: "always"
+	arrowParens: "always",
+	overrides: [
+		{
+			files: "*.md",
+			options: {
+				useTabs: false
+			}
+		}
+	]
 };

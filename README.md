@@ -1,9 +1,10 @@
-<div align="center">
-  <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200"
-      src="https://webpack.js.org/assets/icon-square-big.svg">
-  </a>
-	<h1>eXtended copy-webpack-plugin</h1>
+<div style="-moz-tab-size: 2;tab-size: 2;">
+	<div align="center">
+		<a href="https://github.com/webpack/webpack">
+			<img width="200" height="200"
+				src="https://webpack.js.org/assets/icon-square-big.svg">
+		</a>
+		<h1>eXtended copy-webpack-plugin</h1>
 
 [![npm][npm]][npm-url]
 [![codecov][codecov]][codecov-url]
@@ -39,12 +40,12 @@ Let's get started by adding the plugin to your `webpack` config:
 const { CopyPlugin } = require("xcopy-webpack-plugin");
 
 module.exports = {
-	plugins: [
-		new CopyPlugin([
-			{ from: "source", to: "dest" },
-			{ from: "other", to: "public" }
-		])
-	]
+  plugins: [
+    new CopyPlugin([
+      { from: "source", to: "dest" },
+      { from: "other", to: "public" }
+    ])
+  ]
 };
 ```
 
@@ -56,7 +57,7 @@ The plugin's signature:
 
 ```ts
 module.exports = {
-	plugins: [new CopyPlugin(patterns, options)]
+  plugins: [new CopyPlugin(patterns, options)]
 };
 ```
 
@@ -75,6 +76,8 @@ TBD
 ## Other
 
 > ℹ️ Last but not least a big thank you for the great work of the [copy-webpack-plugin][copy-webpack-plugin-url] to all contributors!
+
+</div>
 
 [npm]: https://img.shields.io/npm/v/xcopy-webpack-plugin.svg
 [npm-url]: https://npmjs.com/package/xcopy-webpack-plugin
