@@ -1,8 +1,17 @@
-<!-- PULL REQUEST: Please use this template and provide us enogh information to review this pull request -->
+<!--
+	We ❤️ what we see! Thank you for your engagement!
 
-**Did you add tests for your changes?**
-<br> [X] YES
-<br> [ ] NO <!-- Note that only changes which contain tests will be merged -->
+	Please place an x (no spaces!) in all [ ] that apply
+-->
+
+**This PR contains:**
+
+<br> [ ] bugfix
+<br> [ ] new feature
+<br> [ ] code refactor
+<br> [ ] test update <!-- If bug or feature is checked, this should be too -->
+<br> [ ] typo fix
+<br> [ ] other: <!-- Tell us what it contains -->
 
 **Summary:**
 
