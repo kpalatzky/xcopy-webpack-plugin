@@ -46,7 +46,7 @@
 		"tsconfig-paths-webpack-plugin": "^3.3.0",
 		"tslint": "^5.20.1",
 		"typescript": "^3.9.7",
-		"webpack": "^4.44.1",
+		"webpack": "^4.44.2",
 		"webpack-cli": "^3.3.12"
 	},
 	"keywords": [
